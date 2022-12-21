@@ -1,0 +1,23 @@
+Algorithm Draw Rectangle at the user setting point
+//input arguments: width, height, cx, cy
+//output result : None
+
+
+1: input width, height, cx, cy			// 반지름 값 입력
+2: if(cx<0)				// x, y 좌표의 양, 음수에 따라 시작점 계산
+3:    start_x = cx + (cx / 2)
+4: else
+5:     start_x = cx - (cx / 2)
+6: if(cy<0)
+7:     start_y = cy + (cy / 2)
+8: else
+9:     start_y = cy - (cy / 2)
+10: heading(x)				// +x방향으로 방향전환
+11: draw(width)				// printout
+12: left(90)				// turn left
+13: draw(height)				// draw
+14: left(90)				// turn left
+15: draw(width)				// draw
+16: left(90)				// turn left
+17: draw(height)				// draw
+18: end

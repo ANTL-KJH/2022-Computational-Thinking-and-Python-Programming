@@ -1,0 +1,10 @@
+Algorithm calculator for area and circumference of circle
+//input arguments: radius
+//output result : area, circumference
+
+1: PI = 3.14				// PI는 3.14로 고정
+2: input radius    				// 반지름 값 입력
+3: area = radius * radius * PI			// calculate area
+4: circumference = 2 * radius * PI		// calculate circumference
+5: printout area and circumference		// printout
+6: end
