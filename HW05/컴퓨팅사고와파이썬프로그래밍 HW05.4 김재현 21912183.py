@@ -53,14 +53,14 @@ def mulMtrx(M1, M2):
     Common_size = len(M1[1])
 
     for i in range(0, row):
-        temp_row = []                # 행 임시저장
+        temp_row = []               # temp row
         for j in range(0, col):
-            result = 0  # 요소들 결과를 여기서 초기화
+            result = 0              # result init
             for k in range(0, Common_size):
-                result += M1[i][k] * M2[k][j]  # 요소의 곱을 더해주면서 F의 요소를 완성
-            temp_row.append(result)  # 행에 집어넣는다.
-        Mtrx.append(temp_row)  # 그리고 그 행을 행렬F에 집어넣으면서 반복
-    return Mtrx  # 반환
+                result += M1[i][k] * M2[k][j]  # multiply calculate
+            temp_row.append(result)
+        Mtrx.append(temp_row)
+    return Mtrx
 
 def main():
     A = [[1,2,3,4], [5,6,7,8], [9,10,0,1]]
